@@ -5,36 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/form.css">
     <link rel="stylesheet" href="/CSS/main.css">
+    <title>Contact</title>
 </head>
 <body>
-    <a href="index.html">
-        <button>Back</button>
-    </a>
+    <div class="top-bar">
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+                <a href="index.html">Home</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+    </div>
+
     <div class="contactForm">
         <form action="https://formspree.io/f/mldebjyy" method="POST">
+            <label for="first-name">First name:</label><br>
+            <input type="text" id="first-name" name="first-name" required><br><br>
             
-                <label for="First name">First name:</label><br>
-                <input type="text" id="First name" name="First name" required="text"><br><br>
+            <label for="last-name">Last name:</label><br>
+            <input type="text" id="last-name" name="last-name" required><br><br>
             
-                <label for="Last name">Last name:</label><br>
-                <input type="text" id="Last name" name="Last name" required="text"><br><br>
+            <label for="Email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
             
-                <label for="Email">Email:</label><br>
-                <input type="email" id="email" name="email" required="email"><br><br>
+            <label for="Phone">Phone:</label><br>
+            <input type="tel" id="tel" name="tel" required><br><br>
             
-                <label for="Phone">Phone:</label><br>
-                <input type="tel" id="tel" name="tel" required="tel"><br><br>
+            <label for="Message">Message:</label><br>
+            <textarea id="Message" name="Message" rows="4" cols="50" required></textarea><br><br>
             
-                <label for="Message">Message:</label><br>
-                <textarea id="Message" name="Message" rows="4" cols="50" required=""></textarea><br><br>
-            
-                <input type="submit" value="Send">
-              
+            <input type="submit" value="Send">
         </form>
-        </div>
-        <footer>
-            <p>© 2024 Code Buddie's</p>
-        </footer>
+    </div>
+
+    <footer>
+        <p>© 2024 Code Buddie's</p>
+    </footer>
 </body>
 </html>
-
