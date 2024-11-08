@@ -66,6 +66,10 @@ button:active, .dropbtn:active {
     top:auto; /* Position it below the button */
 }
 
+.dropdown-content.show {
+    display: block;
+}
+
 /* Links inside the dropdown */
 .dropdown-content a {
     color: black;
@@ -74,7 +78,6 @@ button:active, .dropbtn:active {
     display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
 }
