@@ -6,5 +6,5 @@ let listArray = []
 
 addButton.addEventListener("click", function () {
     listArray.push(textInput.value)
-    console.log(listArray)
+    list.textContent = listArray
 });
